@@ -1,9 +1,9 @@
 <div class="post__container">
-	<div class="user">
-		<h2>A</h2>
-	</div>
+	<app-avatar></app-avatar>
+
 	<div class="post-content">
-		<textarea [(ngModel)]="tweet" (input)="changeTweet()" name="" id="" cols="30" rows="10" [maxlength]="tweetMaxLength" placeholder="What's on your mind?"></textarea>
+		<textarea [(ngModel)]="tweet" (input)="changeTweet()" (keyup.enter)="sendTweet()"
+		 name="" id="" cols="30" rows="10" [maxlength]="tweetMaxLength" placeholder="What's on your mind?"></textarea>
 
 		<div class="interactions">
 			<span class="word-count">{{ tweetRemaining }}</span>

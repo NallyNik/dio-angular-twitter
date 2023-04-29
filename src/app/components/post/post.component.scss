@@ -6,22 +6,8 @@
 	gap: 1rem;
 
 	background-color: white;
-	border-radius: 1px;
+	border-radius: 1rem;
 	box-shadow: 5px 0 20px rgba(0, 0, 0, 0.1);
-}
-
-.user {
-	width: 2rem;
-	height: 2rem;
-	padding: .5rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-	color: lightblue;
-	background-color: gray;
-	border-radius: 50%;
-	font-size: 1.5rem;
 }
 .post-content {
 	width: 85%;
@@ -41,7 +27,7 @@ textarea {
 		outline: none;
 	}
 
-	::placeholder {
+	&::placeholder {
 		color: white;
 	}
 }
